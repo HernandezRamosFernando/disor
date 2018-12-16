@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{36F796B9-235D-4D80-A4A6-87650CDC0C61}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cifrado_cesar_poo_desktop/MainWindow.cs">
+    <Files>
+      <File FileName="Cifrado_cesar_poo_desktop/Cifrados/Cifrado_grupos_inverso.cs" Line="30" Column="6" />
+      <File FileName="Cifrado_cesar_poo_desktop/MainWindow.cs" Line="40" Column="115" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Cifrado__cesar__poo__desktop PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

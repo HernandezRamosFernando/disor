@@ -1,0 +1,23 @@
+/.buildpath
+/.idea
+/.php_cs.cache
+atlassian-ide-plugin.xml
+/.project
+/.settings
+/.cache
+/build
+/vendor
+/composer.lock
+/.cache
+tests/FunctionalTests/results.dat
+tests/unit/Data/db/test.db
+
+# Composer stuff
+vendor/*
+
+#OSX
+.DS_Store
+/nbproject
+
+sauce_connect.log
+*.php

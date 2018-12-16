@@ -1,0 +1,9 @@
+c:\users\christian\documents\visual studio 2012\Projects\juegodelavida\juegodelavida\bin\Debug\juegodelavida.exe.config
+c:\Users\Christian\Documents\Visual Studio 2012\Projects\juegodelavida\juegodelavida\bin\Debug\juegodelavida.exe
+c:\Users\Christian\Documents\Visual Studio 2012\Projects\juegodelavida\juegodelavida\bin\Debug\juegodelavida.pdb
+c:\Users\Christian\Documents\Visual Studio 2012\Projects\juegodelavida\juegodelavida\obj\Debug\juegodelavida.csprojResolveAssemblyReference.cache
+c:\Users\Christian\Documents\Visual Studio 2012\Projects\juegodelavida\juegodelavida\obj\Debug\juegodelavida.formJuego.resources
+c:\Users\Christian\Documents\Visual Studio 2012\Projects\juegodelavida\juegodelavida\obj\Debug\juegodelavida.Properties.Resources.resources
+c:\Users\Christian\Documents\Visual Studio 2012\Projects\juegodelavida\juegodelavida\obj\Debug\juegodelavida.csproj.GenerateResource.Cache
+c:\Users\Christian\Documents\Visual Studio 2012\Projects\juegodelavida\juegodelavida\obj\Debug\juegodelavida.exe
+c:\Users\Christian\Documents\Visual Studio 2012\Projects\juegodelavida\juegodelavida\obj\Debug\juegodelavida.pdb

@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{AA54FBF9-6BD5-4A6A-80B3-CC30E01ECFD6}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="poo_web/Default.aspx">
+    <Files>
+      <File FileName="poo_web/Default.aspx" Line="9" Column="19" />
+      <File FileName="poo_web/Default.aspx.cs" Line="24" Column="31" />
+      <File FileName="poo_web/Default.aspx.designer.cs" Line="29" Column="1" />
+      <File FileName="poo_web/Texto_plano/Texto_plano.cs" Line="15" Column="20" />
+      <File FileName="poo_web/Texto/Texto.cs" Line="17" Column="40" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.poo__web.Tests FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.poo__web PreferredExecutionTarget="gedit" />
+</Properties>

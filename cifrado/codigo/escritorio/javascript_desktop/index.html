@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+
+    <title>Cifrados</title>
+
+    <script src="./modulos/Texto_plano.js"></script>
+    <script src="./modulos/Alfabeto_ingles.js"></script>
+    <script src="./modulos/Cifrado_cesar.js"></script>
+    <script src="./modulos/Cifrado_inverso.js"></script>
+    <script src="./modulos/Cifrado_grupos.js"></script>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" style="color:white">Cifrado Cesar</a>
+      </nav>
+
+      <div class="container">
+
+        <div class="row">
+        
+            <div class="col-md-6">
+<div class="card center">
+  <div class="card-body">
+    <h4 class="card-title">Cifrado</h4>
+
+
+    <div class="form-group">
+        <label>Desplazamiento</label>
+        <input type="number" min="0" id="cifrado_desplazamiento" class="form-control">
+      </div>
+  
+      <div class="form-group">
+          <label>Texto</label>
+          <textarea id="texto" cols="30" rows="10" class="form-control"></textarea>
+      </div>
+  
+      <div class="form-group">
+          <label>Texto Cifrado</label>
+          <textarea id="texto_cifrado" cols="30" rows="10" class="form-control"></textarea>
+      </div>
+
+
+</div>
+</div>
+            </div>
+
+            <div class="col-md-6">
+                    <div class="card center">
+                      <div class="card-body">
+                   
+                    
+                    
+                        
+                      
+                          <div class="form-group">
+                              <label>Texto Inverso</label>
+                              <textarea id="texto_inverso" cols="30" rows="10" class="form-control"></textarea>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="">Grupos</label>
+                            <input type="number" class="form-control"  name="" id="rangos" aria-describedby="helpId" placeholder="">
+                            
+                          </div>
+
+                          <div class="form-group">
+                            <label>Texto Inverso Grupos</label>
+                            <textarea id="texto_inverso_grupos" cols="30" rows="10" class="form-control"></textarea>
+                        </div>
+                    
+                    
+                    </div>
+                    </div>
+                                </div>
+        </div>
+      </div>
+
+
+
+      
+
+      <script>
+    var texto_plano = new Texto_plano("");
+    var alfabeto_ingles = new Alfabeto_ingles();
+    var cifrado_cesar = new Cifrado_cesar(alfabeto_ingles);
+    var cifrado_inverso = new Cifrado_inverso();
+    var cifrado_grupos = new Cifrado_grupos(new Texto_plano(""),cifrado_inverso);
+
+     document.getElementById("texto").addEventListener("keyup",function(e){
+         if(e.keyCode!=8){
+
+        texto_plano.agregar_elemento(e.key);
+        var desplazamiento = parseInt(document.getElementById("cifrado_desplazamiento").value);
+        document.getElementById("texto_cifrado").value = cifrado_cesar.cifrar_texto(texto_plano,desplazamiento,0,"");
+        document.getElementById("texto_inverso").value = cifrado_inverso.cifrar_texto(texto_plano);
+        var rangos = parseInt(document.getElementById("rangos").value);
+        document.getElementById("texto_inverso_grupos").value = cifrado_grupos.cifrar_texto(texto_plano,rangos);
+
+         }
+
+         else{
+             texto_plano.eliminar_ultimo_elemento();
+             document.getElementById("texto_cifrado").value = document.getElementById("texto_cifrado").value.substring(0,document.getElementById("texto_cifrado").value.length-1);
+             document.getElementById("texto_inverso").value = document.getElementById("texto_inverso").value.substring(0,document.getElementById("texto_cifrado").value.length-1);
+
+             
+         }
+        
+     });
+      </script>
+
+</body>
+
+
+</html>
